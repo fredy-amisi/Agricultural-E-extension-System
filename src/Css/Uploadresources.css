@@ -1,0 +1,113 @@
+/* General styles */
+.submit-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .submit-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .submit-container input[type="text"],
+  .submit-container input[type="file"],
+  .submit-container textarea,
+  .submit-container .submit {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-container textarea.textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .submit-container .submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-container .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .resource-list {
+    margin-top: 30px;
+  }
+  
+  .resource-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .resource-item h3 {
+    margin: 0;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .submit-container {
+      width: 95%;
+    }
+  
+    .resource-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .resource-item div {
+      margin-bottom: 10px;
+    }
+  
+    .edit-btn,
+    .delete-btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .submit-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .submit-container input[type="text"],
+    .submit-container input[type="file"],
+    .submit-container textarea,
+    .submit-container .submit {
+      padding: 8px;
+    }
+  }
+  
